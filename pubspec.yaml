@@ -1,0 +1,34 @@
+name: homehunt
+description: A new Flutter project.
+
+# Prevent accidental publishing to pub.dev
+publish_to: 'none'
+
+# Versioning
+version: 1.0.0+1
+
+# Dart SDK environment
+environment:
+  sdk: ^3.8.1
+
+# Dependencies
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^9.0.0
+  cupertino_icons: ^1.0.8
+  http: ^1.5.0
+  provider: ^6.0.5
+  image_picker: ^1.0.4
+
+# Dev dependencies
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# Flutter-specific settings
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/home001.png
+
