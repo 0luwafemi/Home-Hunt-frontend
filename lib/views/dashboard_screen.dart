@@ -49,14 +49,14 @@ class DashboardScreen extends StatelessWidget {
                   const SectionHeader(title: 'Quick Actions'),
                   const SizedBox(height: 12),
 
-
-
                   isWide
                       ? Row(
                     children: const [
                       Expanded(child: ActionButton(icon: Icons.home, label: 'View Properties', route: '/properties')),
                       SizedBox(width: 12),
-                      Expanded(child: ActionButton(icon: Icons.add, label: 'Post Property', route: 'Add Property')),
+                      Expanded(child: ActionButton(icon: Icons.add, label: 'Post Property', route: '/addProperty')),
+                      SizedBox(width: 12),
+                      Expanded(child: ActionButton(icon: Icons.lock, label: 'Change Password', route: '/changePassword')),
                     ],
                   )
                       : Wrap(
@@ -64,11 +64,10 @@ class DashboardScreen extends StatelessWidget {
                     runSpacing: 12,
                     children: const [
                       ActionButton(icon: Icons.home, label: 'View Properties', route: '/properties'),
-
-                      ActionButton(icon: Icons.add, label: 'Post Property', route: '/properties'),
+                      ActionButton(icon: Icons.add, label: 'Post Property', route: '/addProperty'),
+                      ActionButton(icon: Icons.lock, label: 'Change Password', route: '/changePassword'),
                     ],
                   ),
-
                 ],
               );
             },
