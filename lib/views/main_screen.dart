@@ -14,7 +14,7 @@ class _MainScreenState extends State<MainScreen> {
 
   // Pages to display in tabs
   final List<Widget> _pages = const [
-    DashboardScreen(),
+    DashboardScreen(restToken: '',),
     ProfileScreen(),
   ];
 

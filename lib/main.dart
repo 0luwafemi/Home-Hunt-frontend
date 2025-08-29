@@ -116,7 +116,7 @@ class AppRoutes {
     RouteNames.profile: const ProfileScreen(),
     RouteNames.propertySearch: PropertySearchScreen(),
     RouteNames.transaction: const TransactionScreen(),
-    RouteNames.dashboard: const DashboardScreen(),
+    RouteNames.dashboard: const DashboardScreen(restToken: '',),
     RouteNames.login: const LoginScreen(),
     RouteNames.register: const RegistrationScreen(),
     RouteNames.changePassword: const ChangePasswordScreen(),

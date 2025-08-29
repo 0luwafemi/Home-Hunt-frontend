@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DashboardScreen extends StatelessWidget {
-  const DashboardScreen({super.key});
+  const DashboardScreen({super.key, required String restToken});
 
   @override
   Widget build(BuildContext context) {
@@ -57,6 +57,8 @@ class DashboardScreen extends StatelessWidget {
                       Expanded(child: ActionButton(icon: Icons.add, label: 'Post Property', route: '/addProperty')),
                       SizedBox(width: 12),
                       Expanded(child: ActionButton(icon: Icons.lock, label: 'Change Password', route: '/changePassword')),
+                      SizedBox(width: 12),
+                      Expanded(child: ActionButton(icon: Icons.lock, label: 'Reset Token', route: '/resetToken')),
                     ],
                   )
                       : Wrap(
@@ -66,6 +68,8 @@ class DashboardScreen extends StatelessWidget {
                       ActionButton(icon: Icons.home, label: 'View Properties', route: '/properties'),
                       ActionButton(icon: Icons.add, label: 'Post Property', route: '/addProperty'),
                       ActionButton(icon: Icons.lock, label: 'Change Password', route: '/changePassword'),
+                      ActionButton(icon: Icons.lock, label: 'Reset Token', route: '/resetToken'),
+
                     ],
                   ),
                 ],
