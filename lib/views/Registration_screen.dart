@@ -66,13 +66,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       await Provider.of<AuthProvider>(context, listen: false).register(user);
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('✅ Registered successfully!')),
+        const SnackBar(content: Text(' Registered successfully!')),
       );
       Navigator.of(context).pushReplacement(_slideTo(const LoginScreen()));
     } catch (_) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('❌ Registration failed.')),
+        const SnackBar(content: Text(' Registration failed.')),
       );
     } finally {
       if (mounted) setState(() => _loading = false);

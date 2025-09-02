@@ -19,7 +19,7 @@ class AppDrawer extends StatelessWidget {
       child: SafeArea(
         child: Column(
           children: [
-            // 🌟 Custom Drawer Header
+            //  Custom Drawer Header
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
@@ -72,7 +72,7 @@ class AppDrawer extends StatelessWidget {
 
             const SizedBox(height: 8),
 
-            // 🧭 Navigation Items
+            // Navigation Items
             _drawerItem(context, icon: Icons.dashboard, label: 'Dashboard', route: '/dashboard', active: currentRoute == '/dashboard'),
             _drawerItem(context, icon: Icons.swap_horiz, label: 'Transactions', route: '/transaction', active: currentRoute == '/transaction'),
             _drawerItem(context, icon: Icons.home_work, label: 'Properties', route: '/properties', active: currentRoute == '/properties'),
@@ -83,7 +83,7 @@ class AppDrawer extends StatelessWidget {
 
             const Divider(),
 
-            // 🌗 Theme Toggle
+            //  Theme Toggle
             SwitchListTile(
               secondary: Icon(themeProvider.isDarkMode ? Icons.dark_mode : Icons.light_mode),
               title: const Text('Dark Mode'),
@@ -93,7 +93,7 @@ class AppDrawer extends StatelessWidget {
 
             const Divider(),
 
-            // 🚪 Logout with confirmation
+            //  Logout with confirmation
             ListTile(
               leading: const Icon(Icons.logout, color: Colors.redAccent),
               title: const Text('Logout', style: TextStyle(color: Colors.redAccent)),

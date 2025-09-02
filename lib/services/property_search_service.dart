@@ -4,7 +4,7 @@ import '../models/property_dto.dart';
 import '../models/property_search_criteria.dart';
 
 class PropertySearchService {
-  final String _baseUrl = 'http://10.0.2.2:8080/api/properties'; // Adjust if needed
+  final String _baseUrl = 'http://10.0.2.2:8080/api/properties';
 
   Future<List<PropertyDto>> search(PropertySearchCriteria criteria, int page, int size) async {
     final url = Uri.parse('$_baseUrl/search?page=$page&size=$size');

@@ -22,7 +22,7 @@ class ProfileScreen extends StatelessWidget {
               : Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // 🧑 Avatar
+              //  Avatar
               CircleAvatar(
                 radius: 50,
                 backgroundColor: theme.colorScheme.primary,
@@ -59,7 +59,7 @@ class ProfileScreen extends StatelessWidget {
 
               const Spacer(),
 
-              // ✏️ Edit Button
+              //  Edit Button
               ElevatedButton.icon(
                 onPressed: () => Navigator.pushNamed(context, '/edit-profile'),
                 icon: const Icon(Icons.edit),

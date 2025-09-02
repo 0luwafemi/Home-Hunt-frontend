@@ -2,10 +2,10 @@ import 'package:homehunt/models/property_dto.dart';
 
 class PropertySearchDto {
   final String location;
-  final PropertyType type; // Could be a custom enum: PropertyType
+  final PropertyType type;
   final double minPrice;
   final double maxPrice;
-  final PropertyStatus status; // Could be a custom enum: PropertyStatus
+  final PropertyStatus status;
 
   PropertySearchDto({
     required this.location,

@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/feedback_request.dart';
 
 class FeedbackService {
-  final String _baseUrl = 'http://10.0.2.2:8080/api/feedback'; // Adjust if needed
+  final String _baseUrl = 'http://10.0.2.2:8080/api/feedback';
 
   Future<void> submitFeedback(FeedbackRequest request) async {
     final url = Uri.parse('$_baseUrl/submit');

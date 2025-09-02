@@ -5,7 +5,7 @@ import '../models/reg_response.dart';
 import '../models/user_dto.dart';
 
 class AuthService {
-  final String _baseUrl = 'http://10.0.2.2:8080/api/auth'; // Update as needed
+  final String _baseUrl = 'http://10.0.2.2:8080/api/auth';
 
   Future<RegResponse> register(UserDTO user) async {
     final url = Uri.parse('$_baseUrl/register');

@@ -67,7 +67,7 @@ class _PropertyFormScreenState extends State<PropertyFormScreen> {
       location: location,
       status: _selectedStatus!,
       type: _selectedType!,
-      imageUrl: _selectedImage!.path, // Replace with actual upload logic
+      imageUrl: _selectedImage!.path, // Replace with actual upload logic later
       isFeatured: false,
       description: '',
       agent: User(

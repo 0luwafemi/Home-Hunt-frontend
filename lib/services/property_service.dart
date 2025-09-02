@@ -4,9 +4,9 @@ import '../models/property_dto.dart';
 import '../models/property_response.dart';
 
 class PropertyService {
-  final String baseUrl = 'http://10.0.2.2:8080/api/properties'; // Use your actual endpoint
+  final String baseUrl = 'http://10.0.2.2:8080/api/properties';
 
-  // 🔍 List All Properties
+  // List All Properties
   Future<List<PropertyDto>> listAll() async {
     final response = await http.get(Uri.parse('$baseUrl/all'));
 
@@ -18,7 +18,7 @@ class PropertyService {
     }
   }
 
-  // 📤 Post New Property
+  // Post New Property
   Future<PropertyDto> postProperty(PropertyDto dto, int agentId) async {
     final response = await http.post(
       Uri.parse('$baseUrl/post?agentId=$agentId'),
@@ -33,7 +33,7 @@ class PropertyService {
     }
   }
 
-  // ✏️ Update Property
+  //  Update Property
   Future<PropertyDto> updateProperty(int agentId, PropertyDto dto) async {
     final response = await http.put(
       Uri.parse('$baseUrl/update/$agentId'),
@@ -48,7 +48,7 @@ class PropertyService {
     }
   }
 
-  // 🛏 Rent Property
+  //  Rent Property
   Future<PropertyResponse> rentProperty(int propertyId, int userId) async {
     final response = await http.post(
       Uri.parse('$baseUrl/rent/$propertyId/$userId'),
@@ -61,7 +61,7 @@ class PropertyService {
     }
   }
 
-  // 💰 Buy Property
+  //  Buy Property
   Future<PropertyResponse> buyProperty(int propertyId, int userId) async {
     final response = await http.post(
       Uri.parse('$baseUrl/buy/$propertyId/$userId'),

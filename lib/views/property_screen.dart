@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../property_card.dart';
 import '../providers/property_provider.dart';
-import 'property_form_screen.dart'; // Make sure this import is correct
+import 'property_form_screen.dart';
 
 class PropertyScreen extends StatelessWidget {
   const PropertyScreen({super.key});

@@ -5,7 +5,7 @@ import '../models/transection_request.dart';
 import '../models/transection_response.dart';
 
 class TransactionService {
-  final String _baseUrl = 'http://10.0.2.2:8080/api/transactions'; // Adjust if needed
+  final String _baseUrl = 'http://10.0.2.2:8080/api/transactions';
 
   Future<TransactionResponse> processTransaction(
       TransactionRequest request, int userId) async {

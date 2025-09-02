@@ -1,9 +1,8 @@
 enum TransactionType {
   SALE,
   RENT,
-  PURCHASE,
-  LEASE,
-  // Add more as needed
+  PURCHASE
+
 }
 
 extension TransactionTypeExtension on TransactionType {
@@ -22,7 +21,7 @@ class TransactionResponse {
   final int? userId;
   final TransactionType? transactionType;
   final DateTime? timestamp;
-  final String? transactionId; // Optional: add if needed
+  final String? transactionId;
 
   TransactionResponse({
     required this.status,
@@ -46,7 +45,7 @@ class TransactionResponse {
       timestamp: json['timestamp'] != null
           ? DateTime.parse(json['timestamp'] as String)
           : null,
-      transactionId: json['transactionId'] as String?, // Optional
+      transactionId: json['transactionId'] as String?,
     );
   }
 
